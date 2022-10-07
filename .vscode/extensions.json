@@ -1,3 +1,9 @@
 {
-  "recommendations": ["Vue.volar"]
+  "recommendations": [
+    "Vue.volar",
+    "editorconfig.editorconfig",
+    "antfu.iconify",
+    "antfu.unocss",
+    "antfu.vite",
+  ]
 }
