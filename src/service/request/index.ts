@@ -35,17 +35,17 @@ class Request {
     // 拦截器执行顺序 接口请求 -> 实例请求 -> 全局请求 -> 实例响应 -> 全局响应 -> 接口响应
     this.instance.interceptors.request.use(
       (res: AxiosRequestConfig) => res,
-      (err: any) => err
+      (err: any) => err,
     )
 
     // 使用实例拦截器
     this.instance.interceptors.request.use(
       this.interceptorsObj?.requestInterceptors,
-      this.interceptorsObj?.requestInterceptorsCatch
+      this.interceptorsObj?.requestInterceptorsCatch,
     )
     this.instance.interceptors.response.use(
       this.interceptorsObj?.responseInterceptors,
-      this.interceptorsObj?.responseInterceptorsCatch
+      this.interceptorsObj?.responseInterceptorsCatch,
     )
     // 全局响应拦截器保证最后执行
     this.instance.interceptors.response.use(
@@ -53,7 +53,7 @@ class Request {
       (res: AxiosResponse) => {
         return res.data
       },
-      (err: any) => err
+      (err: any) => err,
     )
   }
 
@@ -66,7 +66,7 @@ class Request {
     return this.cancelRequestSourceList?.findIndex(
       (item: CancelRequestSource) => {
         return Object.keys(item)[0] === url
-      }
+      },
     ) as number
   }
 
@@ -76,12 +76,12 @@ class Request {
    * @returns {*}
    */
   private delUrl(url: string) {
-    const urlIndex = this.requestUrlList?.findIndex((u) => u === url)
+    const urlIndex = this.requestUrlList?.findIndex(u => u === url)
     const sourceIndex = this.getSourceIndex(url)
     // 删除url和cancel方法
     urlIndex !== -1 && this.requestUrlList?.splice(urlIndex as number, 1)
-    sourceIndex !== -1 &&
-      this.cancelRequestSourceList?.splice(sourceIndex as number, 1)
+    sourceIndex !== -1
+      && this.cancelRequestSourceList?.splice(sourceIndex as number, 1)
   }
 
   request<T>(config: RequestConfig<T>): Promise<T> {
@@ -124,7 +124,8 @@ class Request {
       // 取消单个请求
       const sourceIndex = this.getSourceIndex(url)
       sourceIndex >= 0 && this.cancelRequestSourceList?.[sourceIndex][url]()
-    } else {
+    }
+    else {
       // 存在多个需要取消请求的地址
       url.forEach((u) => {
         const sourceIndex = this.getSourceIndex(u)

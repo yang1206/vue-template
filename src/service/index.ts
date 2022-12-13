@@ -1,5 +1,5 @@
-import Request from './request'
 import type { AxiosRequestConfig, AxiosResponse } from 'axios'
+import Request from './request'
 import type { RequestConfig } from './request/types'
 export interface IResponse<T> {
   [x: string]: T
@@ -22,6 +22,7 @@ const request = new Request({
       return result
     },
     responseInterceptorsCatch: (error) => {
+      // eslint-disable-next-line no-unused-expressions
       error.response
       return Promise.reject(new Error(error.response.data))
     },
@@ -37,7 +38,8 @@ const request = new Request({
  */
 const HttpRequest = <D = any, T = any>(config: HttpRequestConfig<D, T>) => {
   const { method = 'GET' } = config
-  if (method === 'get' || method === 'GET') config.params = config.data
+  if (method === 'get' || method === 'GET')
+    config.params = config.data
 
   return request.request<IResponse<T>>(config)
 }
