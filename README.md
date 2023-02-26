@@ -1,4 +1,8 @@
-🚀🚀🚀 vue3 starter template
+🚀🚀🚀 Vue starter template
+
+<p align='center'>
+<a href="https://vue-template-yang.netlify.app/">Live Demo</a>
+</p>
 
 Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 
@@ -43,3 +47,7 @@ pnpm dev
 ```
 pnpm  build
 ```
+
+## Variations
+
+- [react-template]('https://github.com/yang1206/react-template.git')

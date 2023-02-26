@@ -1,5 +1,6 @@
 import type { ConfigEnv } from 'vite'
-import { defineConfig, loadEnv } from 'vite'
+import { loadEnv } from 'vite'
+import { defineConfig } from 'vitest/config'
 import { createViteProxy } from './build/config'
 import { setupVitePlugins } from './build/plugins'
 import { convertEnv, getRootPath, getSrcPath } from './build/utils'
@@ -39,6 +40,9 @@ export default defineConfig((configEnv: ConfigEnv) => {
         '~': rootPath,
         '@': srcPath,
       },
+    },
+    test: {
+      environment: 'jsdom',
     },
   }
 })
