@@ -50,7 +50,7 @@ pnpm  build
 
 ## Variations
 
-- [react-template]('https://github.com/yang1206/react-template.git')
+- [react-template](https://github.com/yang1206/react-template.git)
 
-- [uniapp-template]('https://github.com/yang1206/uniapp-template.git')
+- [uniapp-template](https://github.com/yang1206/uniapp-template.git)
   
