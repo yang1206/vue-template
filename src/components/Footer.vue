@@ -13,7 +13,7 @@ const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <nav class="text-xl mt-6 inline-flex gap-2">
+  <nav class="mt-6 inline-flex gap-2 text-xl">
     <button
       class="icon-btn !outline-none"
       :class="isDark ? 'i-line-md:sunny-outline-to-moon-loop-transition' : 'i-line-md:sunny-outline-loop'"
@@ -22,6 +22,6 @@ const toggleDark = useToggle(isDark)
       xxz
     </button>
 
-    <a class="icon-btn i-line-md:github-loop" rel="noreferrer" :href="data?.html_url" target="_blank" title="GitHub" />
+    <a class="i-line-md:github-loop icon-btn" rel="noreferrer" :href="data?.html_url" target="_blank" title="GitHub" />
   </nav>
 </template>

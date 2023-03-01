@@ -9,10 +9,10 @@ const { inc, dec } = useCount
     <p class="font-semibold">
       {{ useCount.count }}
     </p>
-    <button class="btn m-4 h-8 w-8 rounded-full text-center" @click="inc()">
+    <button class="m-4 h-8 w-8 rounded-full text-center btn" @click="inc()">
       +
     </button>
-    <button class="btn m-4 h-8 w-8 rounded-full text-center" @click="dec()">
+    <button class="m-4 h-8 w-8 rounded-full text-center btn" @click="dec()">
       -
     </button>
   </div>

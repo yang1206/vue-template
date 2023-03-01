@@ -8,7 +8,7 @@ const { data, isLoading } = useQuery(['git'], getGithub)
 
 <template>
   <div class="home">
-    <div class="i-carbon-campsite text-4xl inline-block" />
+    <div class="i-carbon-campsite inline-block text-4xl" />
     <p>
       <a rel="noreferrer" href="https://github.com/yang1206/react-template" target="_blank">
         a vue3，vite template
