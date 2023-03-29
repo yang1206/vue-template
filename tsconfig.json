@@ -34,5 +34,10 @@
     "node_modules",
     "dist",
     "**/*.js"
+  ],
+  "include": [
+    "**/*.tsx",
+    "**/*.ts",
+    "**/*.vue"
   ]
 }
