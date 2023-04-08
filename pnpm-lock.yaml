@@ -52,8 +52,8 @@ devDependencies:
     specifier: ^0.50.2
     version: 0.50.2(eslint@8.34.0)(typescript@5.0.2)
   '@vitejs/plugin-vue':
-    specifier: 4.0.0
-    version: 4.0.0(vite@4.2.1)(vue@3.2.47)
+    specifier: 4.1.0
+    version: 4.1.0(vite@4.2.1)(vue@3.2.47)
   '@vue/test-utils':
     specifier: ^2.3.0
     version: 2.3.0(vue@3.2.47)
@@ -1537,8 +1537,8 @@ packages:
       - rollup
     dev: true
 
-  /@vitejs/plugin-vue@4.0.0(vite@4.2.1)(vue@3.2.47):
-    resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
+  /@vitejs/plugin-vue@4.1.0(vite@4.2.1)(vue@3.2.47):
+    resolution: {integrity: sha512-++9JOAFdcXI3lyer9UKUV4rfoQ3T1RN8yDqoCLar86s0xQct5yblxAE+yWgRnU5/0FOlVCpTZpYSBV/bGWrSrQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.0.0
