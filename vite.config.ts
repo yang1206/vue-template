@@ -4,6 +4,7 @@ import { defineConfig } from 'vitest/config'
 import { createViteProxy } from './build/config'
 import { setupVitePlugins } from './build/plugins'
 import { convertEnv, getRootPath, getSrcPath } from './build/utils'
+
 export default defineConfig((configEnv: ConfigEnv) => {
   const srcPath = getSrcPath()
   const rootPath = getRootPath()
@@ -24,14 +25,6 @@ export default defineConfig((configEnv: ConfigEnv) => {
       chunkSizeWarningLimit: 1024, // chunk 大小警告的限制（单位kb）
       commonjsOptions: {
         ignoreTryCatch: false,
-      },
-      terserOptions: {
-        // detail to look https://terser.org/docs/api-reference#compress-options
-        compress: {
-          drop_console: false,
-          pure_funcs: ['console.log', 'console.info'],
-          drop_debugger: true,
-        },
       },
 
     },
