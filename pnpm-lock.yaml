@@ -5,8 +5,8 @@ dependencies:
     specifier: ^4.27.0
     version: 4.27.0(vue@3.2.47)
   '@unocss/reset':
-    specifier: 0.51.4
-    version: 0.51.4
+    specifier: 0.51.5
+    version: 0.51.5
   '@vueuse/core':
     specifier: ^9.13.0
     version: 9.13.0(vue@3.2.47)
@@ -1205,13 +1205,8 @@ packages:
       '@unocss/preset-mini': 0.51.5
     dev: true
 
-  /@unocss/reset@0.51.4:
-    resolution: {integrity: sha512-3FnajZSOrQ4qSbpkY1IGRIFYw8I9E98SBXvjMnHqSl8k4YPbBP29W3YrgSVBMOnPNRL67hRcTaMF3nmbnBuWtQ==}
-    dev: false
-
   /@unocss/reset@0.51.5:
     resolution: {integrity: sha512-Ss/KnoNmHkYOdlN+KEhnYMal/i+Zo2yMm9m10xcXxMawplSP+xZ73csQt0V1IB/OS3mWoRTL+6LpsGkKJ/SYeQ==}
-    dev: true
 
   /@unocss/scope@0.51.5:
     resolution: {integrity: sha512-K7f+Y70fKxTzcmqA7wy1JnArpm5FHgNfRfLpSEQTro5z1Iq6uncTYYR9FyxeLVrWNrhhFhgJc0JWPePS+t312Q==}
