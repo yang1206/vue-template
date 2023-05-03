@@ -51,7 +51,7 @@
     "unplugin-auto-import": "0.15.3",
     "unplugin-vue-components": "^0.24.1",
     "vite": "4.3.4",
-    "vitest": "^0.30.0",
+    "vitest": "^0.31.0",
     "vue-tsc": "1.6.3"
   },
   "lint-staged": {
