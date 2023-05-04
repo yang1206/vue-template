@@ -52,7 +52,7 @@
     "unplugin-vue-components": "^0.24.1",
     "vite": "4.3.4",
     "vitest": "^0.31.0",
-    "vue-tsc": "1.6.3"
+    "vue-tsc": "1.6.4"
   },
   "lint-staged": {
     "*.{vue,js,ts}": "eslint --fix"
