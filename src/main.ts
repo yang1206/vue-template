@@ -1,4 +1,5 @@
 import 'uno.css'
+import 'nprogress/nprogress.css'
 import '@/styles/reset.css'
 import '@/styles/index.css'
 import { createApp } from 'vue'
