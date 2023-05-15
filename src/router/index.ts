@@ -1,7 +1,8 @@
 import type { App } from 'vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import { setupRouterGuard } from './guard'
+import { env } from '~/env'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -13,9 +14,10 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('@/views/Count/index.vue'),
   },
 ]
+const isHash = env.VITE_USE_HASH === 'true'
 
 export const router = createRouter({
-  history: import.meta.env.VITE_USE_HASH ? createWebHashHistory('/') : createWebHashHistory('/'),
+  history: isHash ? createWebHashHistory('/') : createWebHistory('/'),
   routes,
   scrollBehavior: () => ({ left: 0, top: 500 }),
 })

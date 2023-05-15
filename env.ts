@@ -12,7 +12,7 @@ export const env = createEnv({
   client: {
     VITE_APP_TITLE: z.string(),
     VITE_APP_GLOB_BASE_API: z.string(),
-    VITE_USE_HASH: z.boolean(),
+    VITE_USE_HASH: z.literal('true').or(z.literal('false')),
   },
   /**
    * What object holds the environment variables at runtime.
