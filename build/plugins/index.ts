@@ -8,7 +8,11 @@ export function setupVitePlugins(viteEnv?: ViteEnv, isBuild?: boolean): PluginOp
   const plugins = [
     ...unplugins,
     VueDevTools(),
-    vue(),
+    vue({
+      script: {
+        defineModel: true,
+      },
+    }),
     unocss(),
 
   ]
