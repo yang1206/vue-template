@@ -42,6 +42,9 @@ devDependencies:
   '@iconify-json/line-md':
     specifier: ^1.1.24
     version: 1.1.24
+  '@t3-oss/env-core':
+    specifier: ^0.3.1
+    version: 0.3.1(typescript@5.0.4)(zod@3.21.4)
   '@types/node':
     specifier: ^18.16.8
     version: 18.16.8
@@ -64,7 +67,7 @@ devDependencies:
     specifier: ^1.6.1
     version: 1.6.1
   eslint:
-    specifier: ^8.39.0
+    specifier: 8.39.0
     version: 8.39.0
   husky:
     specifier: ^8.0.3
@@ -99,6 +102,9 @@ devDependencies:
   vue-tsc:
     specifier: 1.6.5
     version: 1.6.5(typescript@5.0.4)
+  zod:
+    specifier: ^3.21.4
+    version: 3.21.4
 
 packages:
 
@@ -1095,6 +1101,16 @@ packages:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    dev: true
+
+  /@t3-oss/env-core@0.3.1(typescript@5.0.4)(zod@3.21.4):
+    resolution: {integrity: sha512-iEnBuWeSjzqQLDTUw7H+YhstV4OZrGXTkQGL6ZOMxZQoCmwGX7GVS+1KCd5RvCzOtrIAD9jeOItSWNjC7sG4Sg==}
+    peerDependencies:
+      typescript: '>=4.7.2'
+      zod: ^3.0.0
+    dependencies:
+      typescript: 5.0.4
+      zod: 3.21.4
     dev: true
 
   /@tanstack/match-sorter-utils@8.7.6:
@@ -6375,4 +6391,8 @@ packages:
   /yocto-queue@1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: true
+
+  /zod@3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: true
