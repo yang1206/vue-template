@@ -1,14 +1,13 @@
 import type { AxiosRequestConfig, AxiosResponse } from 'axios'
 import Request from './request'
 import type { RequestConfig } from './request/types'
-import { env } from '~/env'
 
 // 重写返回类型
 interface HttpRequestConfig<T, R> extends RequestConfig<R> {
   data?: T
 }
 const request = new Request({
-  baseURL: env.VITE_APP_GLOB_BASE_API,
+  baseURL: import.meta.env.VITE_BASE_API,
   timeout: 1000 * 60 * 5,
   // withCredentials: true,
   interceptors: {
