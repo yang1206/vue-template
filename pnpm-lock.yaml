@@ -91,8 +91,8 @@ devDependencies:
     specifier: 4.3.8
     version: 4.3.8(@types/node@18.16.8)
   vite-plugin-vue-devtools:
-    specifier: ^0.0.21
-    version: 0.0.21(vite@4.3.8)(vue@3.3.2)
+    specifier: ^0.0.22
+    version: 0.0.22(vite@4.3.8)(vue@3.3.2)
   vitest:
     specifier: ^0.31.0
     version: 0.31.0(jsdom@22.0.0)
@@ -6076,8 +6076,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-devtools@0.0.21(vite@4.3.8)(vue@3.3.2):
-    resolution: {integrity: sha512-If1blQcPyIpvNaTY/0xsZGVUx6ZstGLbgI9RPvscGd55yCHmB8MmceL96VF7/tTD8DzL4KA69mJPq8rmXVKspQ==}
+  /vite-plugin-vue-devtools@0.0.22(vite@4.3.8)(vue@3.3.2):
+    resolution: {integrity: sha512-f1/X5gt5rekJa74juP3EotxhSfvzI6k+1Oe0l1Bq1SC0OKekYvDZ5Q4F9Z020K6hjUyC9i8d+CjOvdRlesh4Gw==}
     engines: {node: '>=14'}
     peerDependencies:
       vite: ^3.0.0-0 || ^4.0.0-0
