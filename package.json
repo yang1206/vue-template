@@ -37,7 +37,7 @@
     "@iconify-json/line-md": "^1.1.24",
     "@types/node": "^18.16.8",
     "@types/nprogress": "^0.2.0",
-    "@unocss/eslint-config": "^0.52.0",
+    "@unocss/eslint-config": "^0.53.0",
     "@vitejs/plugin-vue": "4.2.3",
     "@vue/test-utils": "^2.3.2",
     "commitizen": "^4.3.0",
