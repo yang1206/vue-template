@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@tanstack/vue-query": "^4.29.11",
-    "@unocss/reset": "0.53.4",
+    "@unocss/reset": "0.53.5",
     "@vueuse/core": "^10.1.2",
     "axios": "^1.4.0",
     "nprogress": "^0.2.0",
