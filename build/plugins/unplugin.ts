@@ -1,7 +1,8 @@
-import { resolve } from 'path'
+import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { getRootPath, getSrcPath } from '../utils'
+
 export default [
   AutoImport({
     imports: ['vue', 'vue-router', '@vueuse/core'],
