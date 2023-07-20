@@ -84,7 +84,7 @@ devDependencies:
     version: 5.0.4
   unocss:
     specifier: 0.53.5
-    version: 0.53.5(postcss@8.4.25)(vite@4.4.5)
+    version: 0.53.5(postcss@8.4.26)(vite@4.4.5)
   unplugin-auto-import:
     specifier: 0.16.6
     version: 0.16.6(@vueuse/core@10.1.2)
@@ -95,8 +95,8 @@ devDependencies:
     specifier: 4.4.5
     version: 4.4.5(@types/node@18.16.17)
   vite-plugin-vue-devtools:
-    specifier: ^0.4.14
-    version: 0.4.14(@types/node@18.16.17)(axios@1.4.0)(nprogress@0.2.0)(pug@3.0.2)(vite@4.4.5)(vue@3.3.4)
+    specifier: ^0.5.0
+    version: 0.5.0(@types/node@18.16.17)(axios@1.4.0)(nprogress@0.2.0)(pug@3.0.2)(vite@4.4.5)(vue@3.3.4)
   vitest:
     specifier: ^0.33.0
     version: 0.33.0(jsdom@22.1.0)
@@ -1736,7 +1736,7 @@ packages:
       sirv: 2.0.3
     dev: true
 
-  /@unocss/postcss@0.53.5(postcss@8.4.25):
+  /@unocss/postcss@0.53.5(postcss@8.4.26):
     resolution: {integrity: sha512-IfZl4GxrpegP/861bp3e0X3VcQJ9/M3VxC9UQ7zzxkOz/E8R09iMpbnznVLrTiLp2r96p5k/ggXLoadFm1FxGA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1747,7 +1747,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.0
       magic-string: 0.30.1
-      postcss: 8.4.25
+      postcss: 8.4.26
     dev: true
 
   /@unocss/preset-attributify@0.53.5:
@@ -5164,6 +5164,13 @@ packages:
       brace-expansion: 2.0.1
     dev: true
 
+  /minimatch@9.0.3:
+    resolution: {integrity: sha512-RHiac9mvaRw0x3AYRgDC1CxAP7HTcNrrECeA8YYJeWnpo+2Q5CegtZjaotWTWxDG3UeGA1coE05iH1mPjT/2mg==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: true
+
   /minimist-options@4.1.0:
     resolution: {integrity: sha512-Q4r8ghd80yhO/0j1O3B2BjweX3fiHg9cdOwjJd2J76Q135c+NDxGCqdYKQ1SKBuFfgWbAUzBfvYjPUEeNgqN1A==}
     engines: {node: '>= 6'}
@@ -6561,7 +6568,7 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unocss@0.53.5(postcss@8.4.25)(vite@4.4.5):
+  /unocss@0.53.5(postcss@8.4.26)(vite@4.4.5):
     resolution: {integrity: sha512-LXAdtzAaH8iEDWxW4t9i6TvJNw0OSrgdN+jw8rAZAWb73Nx51ZLoKPUB1rFvQMr2Li7LcsUj5hYpOrQbhhafYg==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -6574,7 +6581,7 @@ packages:
       '@unocss/cli': 0.53.5
       '@unocss/core': 0.53.5
       '@unocss/extractor-arbitrary-variants': 0.53.5
-      '@unocss/postcss': 0.53.5(postcss@8.4.25)
+      '@unocss/postcss': 0.53.5(postcss@8.4.26)
       '@unocss/preset-attributify': 0.53.5
       '@unocss/preset-icons': 0.53.5
       '@unocss/preset-mini': 0.53.5
@@ -6778,11 +6785,11 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-vue-devtools@0.4.14(@types/node@18.16.17)(axios@1.4.0)(nprogress@0.2.0)(pug@3.0.2)(vite@4.4.5)(vue@3.3.4):
-    resolution: {integrity: sha512-24eYisyYHuJzbIbNnRId+sEttyMJvgfGVqeuC+QHjBl8v7+WjRNvg3aznTUz4N76wX2b4q+AZwS4ZmZEn+Pw6w==}
-    engines: {node: '>=14'}
+  /vite-plugin-vue-devtools@0.5.0(@types/node@18.16.17)(axios@1.4.0)(nprogress@0.2.0)(pug@3.0.2)(vite@4.4.5)(vue@3.3.4):
+    resolution: {integrity: sha512-LClwcrlbGyTHmq9aVbjatvH+PENQJkdyX/qbZP7kF8xgFb3LPntEHCKphDW+oXS3e7ExKEOZXIgtrjE3Quop+A==}
+    engines: {node: '>=v14'}
     peerDependencies:
-      vite: ^3.0.0-0 || ^4.0.0-0
+      vite: ^3.1.0 || ^4.0.0-0
     dependencies:
       '@vueuse/core': 10.2.1(vue@3.3.4)
       '@vueuse/integrations': 10.2.1(axios@1.4.0)(nprogress@0.2.0)(vue@3.3.4)
@@ -6791,7 +6798,7 @@ packages:
       birpc: 0.2.12
       execa: 7.1.1
       json-editor-vue: 0.10.6(vanilla-jsoneditor@0.17.8)(vue@3.3.4)
-      minimatch: 9.0.2
+      minimatch: 9.0.3
       nanoid: 4.0.2
       sirv: 2.0.3
       splitpanes: 3.1.5
@@ -6800,7 +6807,7 @@ packages:
       vite-hot-client: 0.2.1(vite@4.4.5)
       vite-plugin-inspect: 0.7.32(vite@4.4.5)
       vite-plugin-vue-inspector: 3.4.2(vite@4.4.5)
-      vue-router: 4.2.2(vue@3.3.4)
+      vue-router: 4.2.4(vue@3.3.4)
       vuedraggable: 4.1.0(vue@3.3.4)
       xterm: 5.2.1
       xterm-addon-fit: 0.7.0(xterm@5.2.1)
@@ -7033,6 +7040,16 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.5.0
       vue: 3.3.4
+    dev: false
+
+  /vue-router@4.2.4(vue@3.3.4):
+    resolution: {integrity: sha512-9PISkmaCO02OzPVOMq2w82ilty6+xJmQrarYZDkjZBfl4RvYAlt4PKnEX21oW4KTtWfa9OuO/b3qk1Od3AEdCQ==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.5.0
+      vue: 3.3.4
+    dev: true
 
   /vue-template-compiler@2.7.14:
     resolution: {integrity: sha512-zyA5Y3ArvVG0NacJDkkzJuPQDF8RFeRlzV2vLeSnhSpieO6LK2OVbdLPi5MPPs09Ii+gMO8nY4S3iKQxBxDmWQ==}
