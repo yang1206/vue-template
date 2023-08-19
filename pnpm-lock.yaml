@@ -9,8 +9,8 @@ dependencies:
     specifier: ^4.29.11
     version: 4.29.11(vue@3.3.4)
   '@unocss/reset':
-    specifier: 0.53.6
-    version: 0.53.6
+    specifier: 0.55.2
+    version: 0.55.2
   '@vueuse/core':
     specifier: ^10.1.2
     version: 10.1.2(vue@3.3.4)
@@ -1811,6 +1811,11 @@ packages:
 
   /@unocss/reset@0.53.6:
     resolution: {integrity: sha512-WtZU0Q5Y9CHzitYPJ+ZGPUssVuDnRakmHETQ2EuBJgWZhgsmTECrpb78+tnJdFVowuYYQyV0CP6a07uwkFNm6g==}
+    dev: true
+
+  /@unocss/reset@0.55.2:
+    resolution: {integrity: sha512-paInTGIhtI96fcJGZWbkPLW/7qiTlHxSbEIs1HGHcbf3WbwNuKrJUvKlQAhUs2HILNKhvsTXQl05Os8gtinLEA==}
+    dev: false
 
   /@unocss/scope@0.53.6:
     resolution: {integrity: sha512-Wf5pRuRf85w8H4EuHRUnKOsAB4kLvScEQ0Y+MFSvnSuf0ig58Fdqda3jZ++rFCnMPF5vJIyl8Ay6y93M2R4puA==}
