@@ -42,7 +42,7 @@
     "@vue/test-utils": "^2.3.2",
     "commitizen": "^4.3.0",
     "cz-git": "^1.6.1",
-    "eslint": "8.47.0",
+    "eslint": "8.48.0",
     "husky": "^8.0.3",
     "jsdom": "^22.1.0",
     "lint-staged": "^13.2.2",
