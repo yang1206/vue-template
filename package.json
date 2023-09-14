@@ -38,7 +38,7 @@
     "@types/node": "^18.16.17",
     "@types/nprogress": "^0.2.0",
     "@unocss/eslint-config": "^0.53.1",
-    "@vitejs/plugin-vue": "4.2.3",
+    "@vitejs/plugin-vue": "4.3.4",
     "@vue/test-utils": "^2.3.2",
     "commitizen": "^4.3.0",
     "cz-git": "^1.6.1",
