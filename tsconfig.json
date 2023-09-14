@@ -27,7 +27,24 @@
     },
     "types": [
       "vite/client",
-      "node"
+      "node",
+      "unplugin-vue-macros/macros-global",
+      "vite-plugin-vue-layouts/client"
+    ]
+  },
+  "vueCompilerOptions": {
+    "plugins": [
+      "@vue-macros/volar/define-options",
+      "@vue-macros/volar/define-models",
+      "@vue-macros/volar/define-props",
+      "@vue-macros/volar/define-props-refs",
+      "@vue-macros/volar/short-vmodel",
+      "@vue-macros/volar/define-slots",
+      "@vue-macros/volar/jsx-directive"
+      // 选择以下其中一个
+      // "@vue-macros/volar/export-expose",
+      // "@vue-macros/volar/export-props",
+      // "@vue-macros/volar/export-render",
     ]
   },
   "exclude": [

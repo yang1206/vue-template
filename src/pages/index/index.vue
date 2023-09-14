@@ -2,6 +2,7 @@
 import { useQuery } from '@tanstack/vue-query'
 import { getGithub } from '@/api'
 import { useCounterStore } from '@/store'
+
 const { count } = useCounterStore()
 const { data, isLoading } = useQuery(['git'], getGithub)
 </script>
@@ -11,7 +12,7 @@ const { data, isLoading } = useQuery(['git'], getGithub)
     <div class="i-carbon-campsite inline-block text-4xl" />
     <p>
       <a rel="noreferrer" href="https://github.com/yang1206/react-template" target="_blank">
-        a vue3，vite template
+        a Vue3，Vite template
       </a>
     </p>
     <p>
