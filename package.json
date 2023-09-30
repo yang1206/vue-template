@@ -49,7 +49,7 @@
     "simple-git-hooks": "^2.9.0",
     "typescript": "^5.2.2",
     "unocss": "0.55.7",
-    "unocss-preset-useful": "^0.2.5",
+    "unocss-preset-useful": "^0.3.0",
     "unplugin-auto-import": "0.16.6",
     "unplugin-vue-components": "^0.25.2",
     "unplugin-vue-macros": "^2.5.1",
