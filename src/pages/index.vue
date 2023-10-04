@@ -11,7 +11,7 @@ const { data, isLoading } = useQuery(['git'], getGithub)
   <div class="home">
     <div class="i-carbon-campsite inline-block text-4xl" />
     <p>
-      <a rel="noreferrer" href="https://github.com/yang1206/react-template" target="_blank">
+      <a rel="noreferrer" href="https://github.com/yang1206/vue-template" target="_blank">
         a Vue3，Vite template
       </a>
     </p>
