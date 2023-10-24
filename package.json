@@ -34,7 +34,7 @@
     "@commitlint/config-conventional": "^17.7.0",
     "@iconify-json/carbon": "^1.1.21",
     "@iconify-json/line-md": "^1.1.29",
-    "@types/node": "^18.18.3",
+    "@types/node": "^20.0.0",
     "@types/nprogress": "^0.2.1",
     "@unocss/eslint-config": "^0.56.5",
     "@unocss/reset": "0.56.5",
