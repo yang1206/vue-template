@@ -20,7 +20,7 @@
     "commit": "git pull && git add -A && git-cz && git push"
   },
   "dependencies": {
-    "@tanstack/vue-query": "^4.35.7",
+    "@tanstack/vue-query": "^5.0.0",
     "@vueuse/core": "^10.4.1",
     "axios": "^1.5.1",
     "nprogress": "^0.2.0",
