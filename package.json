@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.43.1",
-    "@commitlint/cli": "^17.7.2",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
     "@iconify-json/carbon": "^1.1.21",
     "@iconify-json/line-md": "^1.1.29",
     "@types/node": "^20.0.0",
