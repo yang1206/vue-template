@@ -50,7 +50,7 @@
     "typescript": "^5.2.2",
     "unocss": "0.56.5",
     "unocss-preset-useful": "^0.3.2",
-    "unplugin-auto-import": "0.16.7",
+    "unplugin-auto-import": "0.17.1",
     "unplugin-vue-components": "^0.25.2",
     "unplugin-vue-macros": "^2.6.1",
     "unplugin-vue-router": "^0.7.0",
