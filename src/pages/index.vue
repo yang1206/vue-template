@@ -4,7 +4,10 @@ import { getGithub } from '@/api'
 import { useCounterStore } from '@/store'
 
 const { count } = useCounterStore()
-const { data, isLoading } = useQuery(['git'], getGithub)
+const { data, isLoading } = useQuery({
+  queryKey: ['git'], 
+  queryFn: getGithub
+})
 </script>
 
 <template>
