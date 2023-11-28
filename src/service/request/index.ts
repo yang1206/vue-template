@@ -1,10 +1,6 @@
 import axios from 'axios'
 import type { AxiosInstance, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
-import type {
-  CancelRequestSource,
-  RequestConfig,
-  RequestInterceptors,
-} from './types'
+import type { CancelRequestSource, RequestInterceptors } from './types'
 
 class Request {
   // axios 实例
@@ -27,7 +23,7 @@ class Request {
   */
   requestUrlList?: string[]
 
-  constructor(config: RequestConfig) {
+  constructor(config: IAxiosRequestConfig) {
     this.requestUrlList = []
     this.cancelRequestSourceList = []
     this.instance = axios.create(config)
@@ -40,7 +36,7 @@ class Request {
 
     // 使用实例拦截器
     this.instance.interceptors.request.use(
-      this.interceptorsObj?.requestInterceptors as unknown as ((value: InternalAxiosRequestConfig<any>) => InternalAxiosRequestConfig<any> | Promise<InternalAxiosRequestConfig<any>>),
+      this.interceptorsObj?.requestInterceptors as ((value: InternalAxiosRequestConfig<any>) => InternalAxiosRequestConfig<any> | Promise<InternalAxiosRequestConfig<any>>),
       this.interceptorsObj?.requestInterceptorsCatch,
     )
     this.instance.interceptors.response.use(
@@ -63,11 +59,9 @@ class Request {
    * @returns {number} 索引位置
    */
   private getSourceIndex(url: string): number {
-    return this.cancelRequestSourceList?.findIndex(
-      (item: CancelRequestSource) => {
-        return Object.keys(item)[0] === url
-      },
-    ) as number
+    return this.cancelRequestSourceList?.findIndex((item: CancelRequestSource) => {
+      return Object.keys(item)[0] === url
+    }) as number
   }
 
   /**
@@ -80,11 +74,10 @@ class Request {
     const sourceIndex = this.getSourceIndex(url)
     // 删除url和cancel方法
     urlIndex !== -1 && this.requestUrlList?.splice(urlIndex as number, 1)
-    sourceIndex !== -1
-      && this.cancelRequestSourceList?.splice(sourceIndex as number, 1)
+    sourceIndex !== -1 && this.cancelRequestSourceList?.splice(sourceIndex as number, 1)
   }
 
-  request<T>(config: RequestConfig<T>): Promise<T> {
+  request<T, D>(config: IAxiosRequestConfig<D>): Promise<T> {
     return new Promise((resolve, reject) => {
       // 如果我们为单个请求设置拦截器，这里使用单个请求的拦截器
       if (config.interceptors?.requestInterceptors)
@@ -105,8 +98,9 @@ class Request {
         .request<any, T>(config)
         .then((res) => {
           // 如果我们为单个响应设置拦截器，这里使用单个响应的拦截器
-          if (config.interceptors?.responseInterceptors)
-            res = config.interceptors.responseInterceptors(res)
+          // if (config.interceptors?.responseInterceptors)
+          //   res = config.interceptors.responseInterceptors(res)
+
           resolve(res)
         })
         .catch((err: any) => {
@@ -116,6 +110,22 @@ class Request {
           url && this.delUrl(url)
         })
     })
+  }
+
+  get<T, D = any>(url: string, config?: IAxiosRequestConfig<D>): Promise<T> {
+    return this.request<T, D>({ ...config, url, method: 'GET' })
+  }
+
+  post<T, D = any>(url: string, data?: D, config?: IAxiosRequestConfig<D>): Promise<T> {
+    return this.request<T, D>({ ...config, url, data, method: 'POST' })
+  }
+
+  delete<T, D = any>(url: string, data?: D, config?: IAxiosRequestConfig<D>): Promise<T> {
+    return this.request<T, D>({ ...config, url, data, method: 'DELETE' })
+  }
+
+  patch<T, D = any>(url: string, data?: D, config?: IAxiosRequestConfig<D>): Promise<T> {
+    return this.request<T, D>({ ...config, url, data, method: 'PATCH' })
   }
 
   // 取消请求
@@ -144,4 +154,4 @@ class Request {
 }
 
 export default Request
-export { RequestConfig, RequestInterceptors }
+export { RequestInterceptors }

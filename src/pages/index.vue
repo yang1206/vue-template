@@ -1,12 +1,11 @@
 <script setup lang="ts">
 import { useQuery } from '@tanstack/vue-query'
-import { getGithub } from '@/api'
+import { fetchGithubRepo } from '@/api'
 import { useCounterStore } from '@/store'
 
 const { count } = useCounterStore()
 const { data, isLoading } = useQuery({
-  queryKey: ['git'], 
-  queryFn: getGithub
+  ...fetchGithubRepo('yang1206/uniapp-template'),
 })
 </script>
 

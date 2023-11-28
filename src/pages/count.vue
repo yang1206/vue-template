@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useCounterStore } from '@/store'
+
 const useCount = useCounterStore()
 const { inc, dec } = useCount
 </script>
