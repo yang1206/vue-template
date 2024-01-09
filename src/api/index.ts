@@ -13,6 +13,6 @@ interface GITHUB {
 export function fetchGithubRepo(repo: string) {
   return queryOptions({
     queryKey: [repo, 'repos'],
-    queryFn: () => request.get<GITHUB>(`api/repos/${repo}`),
+    queryFn: () => request.get<GITHUB>(`repos/${repo}`),
   })
 }

@@ -8,7 +8,7 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 
 ### Features
 
-- ⚡️ [Vue3](https://vuejs.org/), [Vite 4](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue3](https://vuejs.org/), [Vite 5](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - born with fastness
 
 - 📑 [Layout system](./src/layouts)
 
@@ -18,8 +18,6 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 - 🍍 [State Management via Pinia](https://github.com/vuejs/pinia)
 
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
-
-<!-- - 🖨 Static-site generation (SSG) via [vite-ssg](https://github.com/antfu/vite-ssg) -->
 - 🤖 [Vue-Query](https://github.com/TanStack/query) - fetch, cache, synchronize and update data easily
 
 - 🦾 TypeScript, of course

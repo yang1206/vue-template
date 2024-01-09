@@ -17,12 +17,12 @@ export function createViteProxy(isUseProxy = true, proxyType: ProxyType) {
 }
 const proxyConfigMappings: Record<ProxyType, ProxyConfig> = {
   dev: {
-    prefix: '/app',
-    target: '',
+    prefix: '/api',
+    target: 'https://api.github.com/',
   },
   test: {
     prefix: '/api',
-    target: 'http://localhost:1206',
+    target: 'https://api.github.com/api',
   },
   prod: {
     prefix: '/api',

@@ -5,7 +5,7 @@ import { useCounterStore } from '@/store'
 
 const { count } = useCounterStore()
 const { data, isLoading } = useQuery({
-  ...fetchGithubRepo('yang1206/uniapp-template'),
+  ...fetchGithubRepo('yang1206/vue-template'),
 })
 </script>
 
@@ -26,7 +26,7 @@ const { data, isLoading } = useQuery({
       {{ count }}
     </p>
   </div>
-  <p v-if="isLoading">
+  <p v-if="!isLoading">
     Loading...
   </p>
   <a v-else className="block" :href="data?.html_url">{{ data?.full_name }}</a>
