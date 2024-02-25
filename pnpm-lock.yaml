@@ -45,7 +45,7 @@ devDependencies:
     version: 18.4.4
   '@iconify-json/carbon':
     specifier: ^1.1.27
-    version: 1.1.27
+    version: 1.1.30
   '@iconify-json/line-md':
     specifier: ^1.1.33
     version: 1.1.33
@@ -1134,8 +1134,8 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
 
-  /@iconify-json/carbon@1.1.27:
-    resolution: {integrity: sha512-tJVXv9+D9cjU5HcaY+8J0awv9AL/Mjo9MWR/fxHfHFPP/iokjPBEgq4jOBDGNe8W0k/BTrVI3zpgZjLoi6RNGg==}
+  /@iconify-json/carbon@1.1.30:
+    resolution: {integrity: sha512-tEvEmxCO0J0t0p2NT2IvJ+iiSNqqnabygSo/S8wkeh2Guhc4tQOgl9dxvDMpy6RqwtKRTKsaROPtnRfu/bl+Tg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
