@@ -57,7 +57,7 @@ devDependencies:
     version: 0.2.3
   '@types/qs':
     specifier: ^6.9.11
-    version: 6.9.11
+    version: 6.9.12
   '@unocss/eslint-config':
     specifier: ^0.58.3
     version: 0.58.5(eslint@8.57.0)(typescript@5.3.3)
@@ -1499,8 +1499,8 @@ packages:
     resolution: {integrity: sha512-k7kRA033QNtC+gLc4VPlfnue58CM1iQLgn1IMAU8VPHGOj7oIHPp9UlhedEnD/Gl8evoCjwkZjlBORtZ3JByUA==}
     dev: true
 
-  /@types/qs@6.9.11:
-    resolution: {integrity: sha512-oGk0gmhnEJK4Yyk+oI7EfXsLayXatCWPHary1MtcmbAifkobT9cM9yutG/hZKIseOU0MqbIwQ/u2nn/Gb+ltuQ==}
+  /@types/qs@6.9.12:
+    resolution: {integrity: sha512-bZcOkJ6uWrL0Qb2NAWKa7TBU+mJHPzhx9jjLL1KHF+XpzEcR7EXHvjbHlGtR/IsP1vyPrehuS6XqkmaePy//mg==}
     dev: true
 
   /@types/semver@7.5.8:
