@@ -25,7 +25,7 @@ dependencies:
     version: 6.11.2
   react-query-kit:
     specifier: ^3.0.0
-    version: 3.0.0
+    version: 3.1.2
   vue:
     specifier: ^3.3.9
     version: 3.3.13(typescript@5.3.3)
@@ -5910,8 +5910,8 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: true
 
-  /react-query-kit@3.0.0:
-    resolution: {integrity: sha512-pZpcORS3d1P8By+CBH1vbBjNGzJ4a2zkaWKysVtHWkpc/s/RHFgNUzGW5tKW8u4HSPqUaoKTQtUSz4WaKu1Zzg==}
+  /react-query-kit@3.1.2:
+    resolution: {integrity: sha512-8f7YioN71sKIqcHn9lc3WV8eHM5L4hjyzJT3+RQEu7sfr/h9FD9rtsoe2PLIop4b+WJ4QqjZCBLERxfJfO/XjA==}
     peerDependencies:
       '@tanstack/react-query': ^4 || ^5
     peerDependenciesMeta:
