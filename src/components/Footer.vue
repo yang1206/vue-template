@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useQuery } from '@tanstack/vue-query'
 import ThemeMode from './ThemeMode.vue'
 </script>
 
