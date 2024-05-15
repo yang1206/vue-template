@@ -1,4 +1,4 @@
-import type { Router } from 'vue-router'
+import type { Router } from 'vue-router/auto'
 
 const baseTitle: string = import.meta.env.VITE_APP_TITLE
 

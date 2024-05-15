@@ -31,7 +31,8 @@
       "vite/client",
       "node",
       "unplugin-vue-macros/macros-global",
-      "vite-plugin-vue-layouts/client"
+      "vite-plugin-vue-layouts/client",
+      "unplugin-vue-router/client"
     ]
   },
   "exclude": [

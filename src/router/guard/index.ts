@@ -1,4 +1,4 @@
-import type { Router } from 'vue-router'
+import type { Router } from 'vue-router/auto'
 import { createPageLoadingGuard } from './loading'
 import { createPageTitleGuard } from './title'
 
