@@ -43,7 +43,7 @@
     "@types/qs": "^6.9.15",
     "@unocss/eslint-config": "^0.60.2",
     "@unocss/reset": "0.60.3",
-    "@vitejs/plugin-vue": "5.0.4",
+    "@vitejs/plugin-vue": "5.0.5",
     "@vue/test-utils": "^2.4.6",
     "commitizen": "^4.3.0",
     "cz-git": "^1.9.1",
