@@ -1,15 +1,15 @@
+import { resolve } from 'node:path'
 import type { PluginOption } from 'vite'
 import unocss from 'unocss/vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
-import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import vue from '@vitejs/plugin-vue'
-import { getRootPath, getSrcPath } from './utils'
 import Layouts from 'vite-plugin-vue-layouts'
+import { getRootPath, getSrcPath } from './utils'
 
 export function setupVitePlugins(): PluginOption[] {
   const plugins = [
