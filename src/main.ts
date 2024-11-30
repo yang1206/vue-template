@@ -1,13 +1,13 @@
+import type { VueQueryPluginOptions } from '@tanstack/vue-query'
+import { setupRouter } from '@/router'
+import { setupStore } from '@/store'
+import { VueQueryPlugin } from '@tanstack/vue-query'
+import { createApp } from 'vue'
+import App from './App.vue'
 import 'uno.css'
 import 'nprogress/nprogress.css'
 import '@/styles/reset.css'
 import '@/styles/index.css'
-import { createApp } from 'vue'
-import type { VueQueryPluginOptions } from '@tanstack/vue-query'
-import { VueQueryPlugin } from '@tanstack/vue-query'
-import App from './App.vue'
-import { setupRouter } from '@/router'
-import { setupStore } from '@/store'
 
 const vueQueryPluginOptions: VueQueryPluginOptions = {
   queryClientConfig: {
