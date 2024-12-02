@@ -9,7 +9,7 @@
     "url": "git+https://github.com/yang1206/vue-template.git"
   },
   "engines": {
-    "node": "20"
+    "node": "22"
   },
   "scripts": {
     "dev": "vite",
