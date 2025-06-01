@@ -1,12 +1,12 @@
-import process from 'node:process'
 import type { ConfigEnv } from 'vite'
+import process from 'node:process'
 import { loadEnv } from 'vite'
 import { defineConfig } from 'vitest/config'
-import { createViteProxy } from './configs/proxy'
 import { setupVitePlugins } from './configs/plugins'
+import { createViteProxy } from './configs/proxy'
 import { convertEnv, getRootPath, getSrcPath } from './configs/utils'
 
-export default defineConfig((configEnv: ConfigEnv) => {
+export default defineConfig((configEnv: ConfigEnv): any => {
   const srcPath = getSrcPath()
   const rootPath = getRootPath()
   const viteEnv = convertEnv(loadEnv(configEnv.mode, process.cwd()))

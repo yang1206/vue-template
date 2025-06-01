@@ -1,10 +1,13 @@
+import type {
+  Preset,
+} from 'unocss'
 import {
   defineConfig,
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
   presetWebFonts,
+  presetWind3,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -38,8 +41,8 @@ export default defineConfig({
     ],
   ],
   presets: [
-    presetUno(),
-    presetUseful(),
+    presetWind3(),
+    presetUseful() as Preset,
     presetAttributify(),
     presetIcons({
       scale: 1.2,
