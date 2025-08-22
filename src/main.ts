@@ -10,6 +10,7 @@ import '@/styles/reset.css'
 import '@/styles/index.css'
 
 const vueQueryPluginOptions: VueQueryPluginOptions = {
+  enableDevtoolsV6Plugin: true,
   queryClientConfig: {
     defaultOptions: {
       queries: {
