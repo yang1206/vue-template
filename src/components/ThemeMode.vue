@@ -6,7 +6,7 @@ const isDark = useDark()
 
 <template>
   <button
-    class="icon-btn !outline-none"
+    class="icon-btn outline-none!"
     :class="isDark ? 'i-line-md:sunny-outline-to-moon-loop-transition' : 'i-line-md:sunny-outline-loop'"
     @click.stop="toggleDark"
   />
